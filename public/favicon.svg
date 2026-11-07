@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C275"/>
+      <stop offset="50%" stop-color="#9E7422"/>
+      <stop offset="100%" stop-color="#6B4E14"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D4D4D8"/>
+    </linearGradient>
+  </defs>
+  <!-- Diamond Kaju Katli Shape -->
+  <polygon points="32,4 58,32 32,60 6,32" fill="url(#goldGrad)" stroke="#FAF7F2" stroke-width="2"/>
+  <!-- Silver Varak Inner Accent -->
+  <polygon points="32,14 50,32 32,50 14,32" fill="url(#silverGrad)" opacity="0.9"/>
+  <!-- Royal Diamond Core -->
+  <polygon points="32,22 42,32 32,42 22,32" fill="url(#goldGrad)"/>
+</svg>

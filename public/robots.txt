@@ -1,0 +1,6 @@
+# robots.txt for Shahi Katli
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kaju-katli.in/sitemap.xml
