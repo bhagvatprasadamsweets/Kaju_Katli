@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
-import hero3dImage from '../assets/hero_3d_kaju_katli.jpg'
-import floatingCashewPng from '../assets/floating_cashew.png'
+import hero3dImage from '../assets/hero_3d_kaju_katli.webp'
+import floatingCashewPng from '../assets/floating_cashew.webp'
 
 export default function HeroAnimation() {
   // Feature states
@@ -202,7 +202,7 @@ export default function HeroAnimation() {
           {/* Base 3D CGI Render of Diamond Kaju Katli Platter - PERMANENTLY VISIBLE */}
           <img
             src={hero3dImage}
-            alt="Handcrafted Diamond Kaju Katli with Pure Silver Varak - Shahi Katli Sweet Platter"
+            alt="Handcrafted Diamond Kaju Katli Platter - Shahi Katli Authentic Cashew Sweets"
             width="600"
             height="600"
             fetchPriority="high"

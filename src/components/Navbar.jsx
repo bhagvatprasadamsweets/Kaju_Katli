@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
-import brandLogo from '../assets/kajukatli_royal_logo.png'
+import brandLogo from '../assets/kajukatli_royal_logo.webp'
+import AnnouncementBar from './AnnouncementBar'
 
 export default function Navbar({ onInquiryClick }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -36,30 +37,36 @@ export default function Navbar({ onInquiryClick }) {
   }
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-[#FAF7F2]/95 backdrop-blur-md shadow-sm border-b border-[#9E7422]/20 py-2.5'
-          : 'bg-[#FAF7F2] border-b border-[#9E7422]/10 py-3'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="#hero"
-            onClick={(e) => handleNavClick(e, '#hero')}
-            className="flex items-center group py-0.5"
-            title="Shahi Katli - Premium Handcrafted Kaju Katli"
-          >
-            <img
-              src={brandLogo}
-              alt="Shahi Katli - Royal Indian Sweets & Kaju Katli Brand Logo"
-              width="180"
-              height="64"
-              className="h-12 sm:h-16 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
-            />
-          </a>
+    <header className="sticky top-0 z-50 w-full">
+      {/* 1 & 2: Top Promotional Bar (Rotating Free Shipping & Mobile App Discount) */}
+      <AnnouncementBar />
+
+      {/* 3: Main White/Cream Navbar Bar */}
+      <div
+        className={`w-full transition-all duration-300 ${
+          scrolled
+            ? 'bg-[#FAF7F2]/95 backdrop-blur-md shadow-sm border-b border-[#9E7422]/20 py-2'
+            : 'bg-[#FAF7F2] border-b border-[#9E7422]/10 py-2.5 sm:py-3'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between min-h-[50px] sm:min-h-[54px]">
+            {/* Logo */}
+            <a
+              href="#hero"
+              onClick={(e) => handleNavClick(e, '#hero')}
+              className="flex items-center group py-0.5"
+              title="Shahi Katli - Premium Handcrafted Kaju Katli"
+              aria-label="Shahi Katli Homepage"
+            >
+              <img
+                src={brandLogo}
+                alt="Shahi Katli - Royal Indian Sweets & Kaju Katli Brand Logo"
+                width="160"
+                height="50"
+                className="h-10 sm:h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 drop-shadow-xs"
+              />
+            </a>
 
           {/* Desktop Navigation Links */}
           <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-7">
@@ -68,6 +75,7 @@ export default function Navbar({ onInquiryClick }) {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
+                aria-label={`Navigate to ${link.name}`}
                 className="text-sm font-medium text-[#3D352E] hover:text-[#9E7422] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#9E7422] hover:after:w-full after:transition-all after:duration-200"
               >
                 {link.name}
@@ -98,6 +106,7 @@ export default function Navbar({ onInquiryClick }) {
                   if (el) el.scrollIntoView({ behavior: 'smooth' })
                 }
               }}
+              aria-label="Send Bulk & Festive Inquiry"
               className="inline-flex items-center gap-1.5 bg-[#9E7422] hover:bg-[#866118] text-white px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Send Inquiry</span>
@@ -116,6 +125,7 @@ export default function Navbar({ onInquiryClick }) {
           </button>
         </div>
       </div>
+      </div>
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
@@ -126,6 +136,7 @@ export default function Navbar({ onInquiryClick }) {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
+                aria-label={`Navigate to ${link.name}`}
                 className="px-3 py-2 text-base font-medium text-[#3D352E] hover:text-[#9E7422] hover:bg-[#F7EEDB]/60 rounded-md transition-colors"
               >
                 {link.name}
@@ -138,6 +149,7 @@ export default function Navbar({ onInquiryClick }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Order Shahi Katli online (opens in new tab)"
               className="w-full flex items-center justify-center gap-1.5 bg-white text-[#9E7422] border border-[#9E7422] hover:bg-[#F7EEDB] py-2.5 rounded-full text-sm font-semibold shadow-xs transition-colors"
             >
               <span>Order Online</span>
@@ -155,6 +167,7 @@ export default function Navbar({ onInquiryClick }) {
                   if (el) el.scrollIntoView({ behavior: 'smooth' })
                 }
               }}
+              aria-label="Send Bulk & Festive Inquiry"
               className="w-full flex items-center justify-center gap-1.5 bg-[#9E7422] hover:bg-[#866118] text-white py-3 rounded-full text-base font-semibold shadow-md transition-colors"
             >
               <span>Send Inquiry</span>

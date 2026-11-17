@@ -8,10 +8,10 @@ import {
   Building2,
   Truck,
 } from 'lucide-react'
-import heroImg from '../assets/hero_kaju_katri_platter.jpg'
-import festivalImg from '../assets/kaju_katri_golden_tray.jpg'
-import weddingImg from '../assets/product_gift_box.jpg'
-import corporateImg from '../assets/corporate_gifting_showcase.jpg'
+import heroImg from '../assets/hero_kaju_katri_platter.webp'
+import festivalImg from '../assets/kaju_katri_golden_tray.webp'
+import weddingImg from '../assets/product_gift_box.webp'
+import corporateImg from '../assets/corporate_gifting_showcase.webp'
 
 export default function AboutSection({ onInquiryClick }) {
   const [isSpecialVisible, setIsSpecialVisible] = useState(false)
@@ -88,7 +88,7 @@ export default function AboutSection({ onInquiryClick }) {
       subtitle: 'Weddings, Diwali & Auspicious Festivals',
       image: festivalImg,
       description:
-        'Opulent traditional Kaju Katri arrangements and silver vark platters tailored for wedding invitations and festive joy.',
+        'Opulent traditional Kaju Katri arrangements and artisanal platters tailored for wedding invitations and festive joy.',
       inquiryType: 'Wedding / Festive Celebration',
     },
     {

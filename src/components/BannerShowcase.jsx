@@ -1,5 +1,5 @@
-import React from 'react'
-import bannerImg from '../assets/royal_delicacies_banner.png'
+﻿import React from 'react'
+import bannerImg from '../assets/royal_delicacies_banner.webp'
 
 export default function BannerShowcase() {
   return (

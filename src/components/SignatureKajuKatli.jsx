@@ -1,5 +1,5 @@
 import { ArrowRight, ExternalLink } from 'lucide-react'
-import signatureImg from '../assets/signature_kaju_katli_box.jpg'
+import signatureImg from '../assets/signature_kaju_katli_box.webp'
 
 export default function SignatureKajuKatli({ onInquiryClick }) {
   return (
@@ -61,6 +61,18 @@ export default function SignatureKajuKatli({ onInquiryClick }) {
                   <span>{highlight}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Free Shipping Badges */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-0.5">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F7EEDB]/90 border border-[#9E7422]/25 text-xs font-semibold text-[#866118] shadow-2xs">
+                <span className="text-[#9E7422] font-bold">✓</span>
+                <span>Free Shipping above ₹999</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F7EEDB]/90 border border-[#9E7422]/25 text-xs font-semibold text-[#866118] shadow-2xs">
+                <span className="text-[#9E7422] font-bold">✓</span>
+                <span>First Order: Free Shipping above ₹599</span>
+              </span>
             </div>
 
             {/* Action Buttons */}

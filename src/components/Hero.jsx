@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, ShieldCheck, Gift, Award } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import HeroAnimation from './HeroAnimation'
 
 export default function Hero({ onInquiryClick }) {
@@ -38,36 +38,15 @@ export default function Hero({ onInquiryClick }) {
               </button>
             </div>
 
-            {/* Value Badges */}
-            <div className="pt-6 grid grid-cols-3 gap-3 sm:gap-6 border-t border-[#9E7422]/15 text-left">
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-[#F7EEDB] text-[#9E7422] shrink-0">
-                  <Award className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="font-semibold text-xs sm:text-sm text-[#3D352E]">100% Cashew</p>
-                  <p className="text-[11px] sm:text-xs text-[#6B5E51]">Zero fillers or flour</p>
-                </div>
+            {/* Promotional Free Shipping Highlights */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F7EEDB]/80 border border-[#9E7422]/25 text-xs font-semibold text-[#866118] shadow-2xs">
+                <span className="text-[#9E7422] font-bold">✓</span>
+                <span>Free Shipping above ₹999</span>
               </div>
-
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-[#F7EEDB] text-[#9E7422] shrink-0">
-                  <ShieldCheck className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="font-semibold text-xs sm:text-sm text-[#3D352E]">Fresh Daily</p>
-                  <p className="text-[11px] sm:text-xs text-[#6B5E51]">Handmade batches</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-[#F7EEDB] text-[#9E7422] shrink-0">
-                  <Gift className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="font-semibold text-xs sm:text-sm text-[#3D352E]">Custom Boxes</p>
-                  <p className="text-[11px] sm:text-xs text-[#6B5E51]">Corporate & festive</p>
-                </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F7EEDB]/80 border border-[#9E7422]/25 text-xs font-semibold text-[#866118] shadow-2xs">
+                <span className="text-[#9E7422] font-bold">✓</span>
+                <span>First Order: Free Shipping above ₹599</span>
               </div>
             </div>
 

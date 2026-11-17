@@ -1,10 +1,10 @@
 import React from 'react'
 import { ArrowRight, Sparkles, Box, Check } from 'lucide-react'
-import kajuImg from '../assets/kaju_katri_golden_tray.jpg'
-import pistaImg from '../assets/product_pista_katri.jpg'
-import chocoImg from '../assets/product_chocolate_katli.jpg'
-import dryfruitImg from '../assets/product_dryfruit_katli.jpg'
-import giftBoxImg from '../assets/product_gift_box.jpg'
+import kajuImg from '../assets/kaju_katri_golden_tray.webp'
+import pistaImg from '../assets/product_pista_katri.webp'
+import chocoImg from '../assets/product_chocolate_katli.webp'
+import dryfruitImg from '../assets/product_dryfruit_katli.webp'
+import giftBoxImg from '../assets/product_gift_box.webp'
 
 export const productsData = [
   {
@@ -12,7 +12,7 @@ export const productsData = [
     name: 'Signature Kaju Katri',
     tag: 'Classic Bestseller',
     image: kajuImg,
-    description: 'Our crown jewel: delicate diamond-cut cashew fudge made with premium whole cashews and finished with genuine edible silver vark.',
+    description: 'Our crown jewel: delicate diamond-cut cashew fudge made with premium whole cashews and finished to authentic perfection.',
     features: ['100% select cashew paste', 'Refined melt-in-mouth texture', 'Traditional slow-churned recipe'],
     packOptions: ['250g', '500g', '1kg', 'Bulk Catering'],
   },

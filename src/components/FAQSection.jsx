@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 
 export default function FAQSection() {
-  // Independent open state allows smooth interaction across 2 columns
-  const [openIndices, setOpenIndices] = useState([0])
+  // All FAQ items closed by default
+  const [openIndices, setOpenIndices] = useState([])
 
   const faqs = [
     {

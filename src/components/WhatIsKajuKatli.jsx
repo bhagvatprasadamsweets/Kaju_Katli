@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
+﻿import React, { useState, useEffect, useRef } from 'react'
 import { Leaf, Landmark, Gem } from 'lucide-react'
-import whatIsKatliImg from '../assets/what_is_kaju_katli.jpg'
+import whatIsKatliImg from '../assets/what_is_kaju_katli.webp'
 
 export default function WhatIsKajuKatli() {
   const [isVisible, setIsVisible] = useState(false)

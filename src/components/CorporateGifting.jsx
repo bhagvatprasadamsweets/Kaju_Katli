@@ -1,6 +1,6 @@
-import React from 'react'
+﻿import React from 'react'
 import { Briefcase, Building2, Gift, Send, CheckCircle2, CalendarDays } from 'lucide-react'
-import corporateImg from '../assets/corporate_gifting_showcase.jpg'
+import corporateImg from '../assets/corporate_gifting_showcase.webp'
 
 export default function CorporateGifting({ onInquiryClick }) {
   const corporateBenefits = [

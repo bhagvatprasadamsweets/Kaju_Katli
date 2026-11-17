@@ -1,5 +1,5 @@
 import React from 'react'
-import ingredientsImg from '../assets/kaju_katli_ingredients.png'
+import ingredientsImg from '../assets/kaju_katli_ingredients.webp'
 
 export default function KajuKatliIngredients() {
   const ingredientsList = [
@@ -45,7 +45,7 @@ export default function KajuKatliIngredients() {
                 <div className="relative rounded-xl overflow-hidden aspect-[16/9] bg-[#FAF7F2]">
                   <img
                     src={ingredientsImg}
-                    alt="Traditional Kaju Katli Ingredients: Cashews, Sugar, Ghee, Water, Saffron, Cardamom, and Silver Vark"
+                    alt="Traditional Kaju Katli Ingredients: Cashews, Sugar, Ghee, Water, Saffron, and Cardamom"
                     width="800"
                     height="450"
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"

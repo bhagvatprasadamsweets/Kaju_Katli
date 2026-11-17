@@ -125,6 +125,7 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
                     href={`https://wa.me/918850011652?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Send pre-filled WhatsApp inquiry directly"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md transition-all"
                   >
                     <MessageCircle className="w-4 h-4" />
@@ -300,7 +301,7 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
                   href={`https://wa.me/918850011652?text=${encodeURIComponent("Hello! I'm interested in your Kaju Katli. Please share the details and pricing. Thank you!")}`}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Chat with Shahi Katli on WhatsApp (opens in new tab)"
+                  aria-label="WhatsApp Support Instant Chat"
                   className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FAF7F2] hover:bg-[#F7EEDB]/80 border border-[#9E7422]/15 transition-all group"
                 >
                   <div className="p-2.5 rounded-xl bg-[#F7EEDB] text-[#9E7422] group-hover:bg-[#9E7422] group-hover:text-white transition-colors shrink-0 mt-0.5">
@@ -322,7 +323,7 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
                 {/* Phone Call */}
                 <a
                   href="tel:+918850011652"
-                  aria-label="Call Shahi Katli at +91-8850011652"
+                  aria-label="Phone Call +91-8850011652"
                   className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FAF7F2] hover:bg-[#F7EEDB]/80 border border-[#9E7422]/15 transition-all group"
                 >
                   <div className="p-2.5 rounded-xl bg-[#F7EEDB] text-[#9E7422] group-hover:bg-[#9E7422] group-hover:text-white transition-colors shrink-0 mt-0.5">
@@ -341,8 +342,8 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
 
                 {/* Written Inquiries */}
                 <a
-                  href="mailto:hello@kaju_katli.in"
-                  aria-label="Email Shahi Katli at hello@kaju_katli.in"
+                  href="mailto:info@megascale.in"
+                  aria-label="Written Inquiries info@megascale.in"
                   className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FAF7F2] hover:bg-[#F7EEDB]/80 border border-[#9E7422]/15 transition-all group"
                 >
                   <div className="p-2.5 rounded-xl bg-[#F7EEDB] text-[#9E7422] group-hover:bg-[#9E7422] group-hover:text-white transition-colors shrink-0 mt-0.5">
@@ -351,7 +352,7 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
                   <div>
                     <span className="text-xs text-[#6B5E51] font-medium block">Written Inquiries</span>
                     <span className="text-sm font-bold text-[#9E7422] group-hover:underline break-all">
-                      hello@kaju_katli.in
+                      info@megascale.in
                     </span>
                     <p className="text-xs text-[#5C5248] mt-0.5">
                       Corporate & wedding invitation proposals.
@@ -370,7 +371,7 @@ export default function InquirySection({ selectedProduct, onResetProduct }) {
                       href="https://goo.gl/maps/VkN5zYqj6yp8YqZJ9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="View Shahi Katli workshop location in Surat, Gujarat on Google Maps (opens in new tab)"
+                      aria-label="Artisan Workshop Surat location on Google Maps"
                       className="text-sm font-semibold text-[#3D352E] hover:text-[#9E7422] hover:underline block leading-snug transition-colors"
                     >
                       411-412, New Escon Plaza, Chhaprabhatha Road, Amroli, Surat, Gujarat - 394107
